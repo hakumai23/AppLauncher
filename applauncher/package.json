@@ -13,7 +13,6 @@
     "@babel/plugin-syntax-flow": "^7.27.1",
     "@babel/plugin-transform-react-jsx": "^7.27.1",
     "@testing-library/dom": "^10.4.1",
-    "@types/testing-library__jest-dom": "^6.0.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
