@@ -36,6 +36,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: latest
         version: 4.1.18
+      '@testing-library/jest-dom':
+        specifier: ^6.9.1
+        version: 6.9.1
       '@types/node':
         specifier: ^20
         version: 20.19.27
