@@ -1,0 +1,14 @@
+[
+  {
+    "url":"https://hakumai23.com/tinyfilemanager",
+    "title":"File Manager",
+    "icon":"",
+    "description":"A simple, tiny, single-file web-based file manager"
+  },
+  {
+    "url":"https://ssh.hakumai23.com",
+    "title":"SSH",
+    "icon":"",
+    "description":"Access your server via SSH in the browser"
+  }
+]
