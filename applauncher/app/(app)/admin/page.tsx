@@ -1,8 +1,23 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+import Card from "@/app/card";
+import adminapps from "@/app/data/adminapps.json";
 export default function AdminPage() {
+  const router = useRouter();
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Admin Page</h1>
-      <p>Welcome to the admin section of the AppLauncher.</p>
+    <div className="p-4 flex flex-wrap flex-col gap-3">
+      <h1 className="font-semibold text-3xl text-black dark:text-white mb-4">管理者用アプリ一覧</h1>
+      {adminapps.map((app, i) => (
+        <Card
+          key={i}
+          title={app.title}
+          description={app.description}
+          onClick={() => {
+            router.push(app.url);
+          }}
+        />
+      ))}
     </div>
   );
 }

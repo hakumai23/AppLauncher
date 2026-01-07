@@ -14,5 +14,5 @@ export default withAuth(
 );
 
 export const config = {
-  matcher: ["/protected/:path*", "/admin/:path*"],
+  matcher: ["/admin/:path*","/data/adminapps.json"],
 };

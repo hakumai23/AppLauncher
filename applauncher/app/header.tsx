@@ -6,7 +6,7 @@ export default async function Header() {
   const isLoggedIn = !!session;
 
   return (
-    <header className="w-full h-16 p-4 flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+    <header className="w-full h-16 p-4 flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 anim-transition">
       <div className="flex items-center gap-3 w-60">
         <img
           src="/logo.png"
