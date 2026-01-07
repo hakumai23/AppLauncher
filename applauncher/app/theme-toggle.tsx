@@ -31,7 +31,7 @@ export function ThemeToggle() {
   return (
     <button
       type="button"
-      className="rounded-xl border-2 px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+      className="rounded-xl border-2 bg-zinc-800 px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
       onClick={() => {
         applyTheme(nextTheme);
         setTheme(nextTheme);

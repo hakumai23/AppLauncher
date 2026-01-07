@@ -1,8 +1,8 @@
 "use client";
+
 import { useRouter } from "next/navigation";
-import { ThemeToggle } from "./theme-toggle";
-import Card from "./card";
-import apps from "./data/apps.json";
+import Card from "../card";
+import apps from "../data/apps.json";
 
 export default function Page() {
   const router = useRouter();
@@ -13,7 +13,9 @@ export default function Page() {
           key={i}
           title={app.title}
           description={app.description}
-          onClick={() => {router.push(app.url)}}
+          onClick={() => {
+            router.push(app.url);
+          }}
         />
       ))}
     </div>
