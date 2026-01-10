@@ -1,14 +1,14 @@
 [
   {
-    "url":"https://hakumai23.com/tinyfilemanager",
-    "title":"File Manager",
-    "icon":"",
-    "description":"A simple, tiny, single-file web-based file manager"
+    "url": "https://ssh.hakumai23.com",
+    "title": "SSH",
+    "icon": "/uploads/4553666b-1f45-4ade-86b1-19b5ef28fd05.png",
+    "description": "Access your server via SSH in the browser"
   },
   {
-    "url":"https://ssh.hakumai23.com",
-    "title":"SSH",
-    "icon":"",
-    "description":"Access your server via SSH in the browser"
+    "title": "FileManager",
+    "description": "Description",
+    "url": "https://hakumai23.com/tinyfilemanager",
+    "icon": "/uploads/ab0a21e1-3ced-411a-8fe7-8057889e29b9.png"
   }
 ]

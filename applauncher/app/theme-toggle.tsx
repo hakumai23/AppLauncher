@@ -36,7 +36,9 @@ export function ThemeToggle() {
         applyTheme(nextTheme);
         setTheme(nextTheme);
       }}
-      aria-label={theme === "dark" ? "ライトモードに切り替え" : "ダークモードに切り替え"}
+      aria-label={
+        theme === "dark" ? "ライトモードに切り替え" : "ダークモードに切り替え"
+      }
     >
       {theme === "dark" ? "Light" : "Dark"}
     </button>

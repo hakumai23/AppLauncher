@@ -7,7 +7,7 @@ import apps from "../data/apps.json";
 export default function Page() {
   const router = useRouter();
   return (
-    <div className="flex flex-wrap gap-3 p-4">
+    <div className="flex flex-row flex-wrap gap-3 p-4">
       {apps.map((app, i) => (
         <Card
           key={i}
@@ -16,6 +16,7 @@ export default function Page() {
           onClick={() => {
             router.push(app.url);
           }}
+          src={app.icon}
         />
       ))}
     </div>

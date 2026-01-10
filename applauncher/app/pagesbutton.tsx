@@ -11,8 +11,7 @@ export default function PagesButton({ title, href }: Props) {
   const router = useRouter();
   const pathname = usePathname();
 
-  const isActive =
-    !!href && (pathname === href || pathname === `${href}/`);
+  const isActive = !!href && (pathname === href || pathname === `${href}/`);
 
   return (
     <div

@@ -1,8 +1,14 @@
 [
   {
-    "url": "https://ssh.hakumai23.com",
+    "title": "Hello",
+    "description": "Hello",
+    "url": "https://hakumai23.com",
+    "icon": "/uploads/14c88510-7448-4ef7-8a27-637b7cfd2ab4.png"
+  },
+  {
     "title": "SSH",
-    "icon": "",
-    "description": "Access your server via SSH in the browser"
+    "description": "Access your server via SSH in the browser",
+    "url": "https://ssh.hakumai23.com",
+    "icon": "/uploads/d0b13b5d-2b49-4378-8fa3-f490d176b70c.png"
   }
 ]
