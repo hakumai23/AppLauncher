@@ -1,5 +1,7 @@
 import { getServerSession } from "next-auth/next";
+import Link from "next/link";
 import { authOptions } from "../auth";
+import { SignOutButton } from "./signout-button";
 
 export default async function Header() {
   const session = await getServerSession(authOptions);
@@ -21,20 +23,15 @@ export default async function Header() {
             <span className="text-sm text-zinc-600 dark:text-zinc-300">
               {session?.user?.email ?? "ログイン中"}
             </span>
-            <a
-              href="/api/auth/signout"
-              className="inline-flex items-center justify-center w-24 h-10 bg-zinc-200 text-zinc-900 hover:bg-zinc-300 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700 p-2 font-semibold rounded-xl"
-            >
-              Log Out
-            </a>
+            <SignOutButton className="inline-flex items-center justify-center w-24 h-10 bg-zinc-200 text-zinc-900 hover:bg-zinc-300 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700 p-2 font-semibold rounded-xl" />
           </div>
         ) : (
-          <a
+          <Link
             href="/login"
             className="inline-flex items-center justify-center w-24 h-10 bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100 p-2 font-semibold rounded-xl"
           >
             Log In
-          </a>
+          </Link>
         )}
       </div>
     </header>

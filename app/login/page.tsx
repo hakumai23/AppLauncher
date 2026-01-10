@@ -1,9 +1,11 @@
 "use client";
+import { Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Button from "../button";
 import { GoogleButton } from "../googlebutton";
 import { signIn } from "next-auth/react";
-export default function Page() {
+
+function LoginContent() {
   const router = useRouter();
   const sp = useSearchParams();
   const callbackUrl = sp.get("callbackUrl") ?? "/";
@@ -24,5 +26,13 @@ export default function Page() {
         />
       </div>
     </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense>
+      <LoginContent />
+    </Suspense>
   );
 }

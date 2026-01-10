@@ -23,7 +23,7 @@
 - 仕様が曖昧な場合は最小のUIで成立させる
 
 ## Next.js/React ルール
-- App Router配下(applauncher/app)の構成を崩さない
+- App Router配下(app)の構成を崩さない
 - Server Componentsを基本とし、必要な場合のみuse clientを付ける
 - データ取得や副作用は責務を分離し、ページ側は薄く保つ
 
@@ -33,8 +33,8 @@
 - 例外的に長い処理になる場合は関数分割して可読性を保つ
 
 ## 主要ディレクトリ
-- applauncher/app: 画面とUIコンポーネント
-- applauncher/app/data/apps.json: アプリ一覧データ
+- app: 画面とUIコンポーネント
+- app/data/apps.json: アプリ一覧データ
 
 ## 重要な制約
 - 追加のページ、モーダル、フィルタ、アニメーションなどの“ついでの機能”は入れない
