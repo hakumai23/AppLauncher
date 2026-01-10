@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
+import type { ChangeEvent } from "react";
 import Button from "./button";
 export type AppItem = {
   url: string;
@@ -11,7 +12,6 @@ export type AppItem = {
 type UploadResult = {
   url: string;
 };
-var result: UploadResult;
 type EditBarProps = {
   value: AppItem;
   onChange: (next: AppItem) => void;
@@ -26,7 +26,7 @@ export default function EditBar(props: EditBarProps) {
     }
   };
 
-  const OnChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const OnChange = async (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
