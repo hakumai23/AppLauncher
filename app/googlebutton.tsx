@@ -1,6 +1,7 @@
 "use client";
 import { Roboto } from "next/font/google";
 import { signIn } from "next-auth/react";
+import { APP_BASE_PATH } from "./constant";
 export const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500"],
@@ -16,7 +17,7 @@ export function GoogleButton({
     <button type="button" onClick={onClick}>
       <div className="flex items-center h-10 text-white dark:text-black bg-black dark:bg-white rounded-full  dark:hover:bg-gray-200 hover:bg-gray-800 cursor-pointer">
         <img
-          src="/google.png"
+          src={APP_BASE_PATH + "/google.png"}
           alt="Google Logo"
           className="h-5 w-5 m-2.5 ml-3"
         />

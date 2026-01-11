@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import type { ChangeEvent } from "react";
 import Button from "./button";
+import { APP_BASE_PATH } from "./constant";
 export type AppItem = {
   url: string;
   title: string;
@@ -43,7 +44,7 @@ export default function EditBar(props: EditBarProps) {
     }
 
     const result = (await res.json()) as UploadResult;
-    onChange({ ...value, icon: result.url });
+    onChange({ ...value, icon: APP_BASE_PATH + result.url });
 
     if (inputRef.current) inputRef.current.value = "";
   };
@@ -83,7 +84,7 @@ export default function EditBar(props: EditBarProps) {
             ref={inputRef}
             onChange={OnChange}
           />
-          <img src={value.icon || "/logo.png"} alt="" className="w-10 h-10" />
+          <img src={APP_BASE_PATH + (value.icon || "/logo.png")} alt="" className="w-10 h-10" />
           <Button title="アイコンを選択" onClick={openFileDialog} />
         </div>
         <div>

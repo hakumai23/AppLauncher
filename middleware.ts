@@ -1,11 +1,11 @@
 import { withAuth } from "next-auth/middleware";
-
+import { APP_BASE_PATH } from "./app/constant";
 export default withAuth(
   function middleware() {
   },
   {
     pages: {
-      signIn: "/login",
+      signIn: APP_BASE_PATH + "/login",
     },
     callbacks: {
       authorized: ({ token }) => !!token,
@@ -14,5 +14,5 @@ export default withAuth(
 );
 
 export const config = {
-  matcher: ["/admin/:path*","/data/adminapps.json"],
+  matcher: ["/apps/admin/:path*","/apps/data/adminapps.json"],
 };

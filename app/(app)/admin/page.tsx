@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import Card from "@/app/card";
 import adminapps from "@/app/data/adminapps.json";
+import { APP_BASE_PATH } from "../../constant";
 export default function AdminPage() {
   const router = useRouter();
   return (
@@ -19,7 +20,7 @@ export default function AdminPage() {
             onClick={() => {
               router.push(app.url);
             }}
-            src={app.icon}
+            src={APP_BASE_PATH + app.icon}
           />
         ))}
       </div>

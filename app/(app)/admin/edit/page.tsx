@@ -2,6 +2,7 @@
 import EditBar from "@/app/editbar";
 import React, { useEffect, useState } from "react";
 import Button from "@/app/button";
+import { APP_BASE_PATH } from "../../../constant";
 type AppItem = {
   url: string;
   title: string;
@@ -12,7 +13,7 @@ const emptyItem = (): AppItem => ({
   title: "",
   description: "",
   url: "",
-  icon: "/logo.png",
+  icon: APP_BASE_PATH + "/logo.png",
 });
 
 export default function AdminEditPage() {
