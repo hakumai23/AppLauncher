@@ -2,6 +2,7 @@
 import EditBar from "@/app/editbar";
 import React, { useEffect, useState } from "react";
 import Button from "@/app/button";
+import { withBasePath } from "@/lib/basePath";
 type AppItem = {
   url: string;
   title: string;
@@ -36,8 +37,8 @@ export default function AdminEditPage() {
   useEffect(() => {
     const load = async () => {
       const [adminRes, appsRes] = await Promise.all([
-        fetch("/api/adminapps", { cache: "no-store" }),
-        fetch("/api/apps", { cache: "no-store" }),
+        fetch(withBasePath("/api/adminapps"), { cache: "no-store" }),
+        fetch(withBasePath("/api/apps"), { cache: "no-store" }),
       ]);
 
       if (!adminRes.ok || !appsRes.ok) throw new Error("Failed to fetch data");
@@ -51,11 +52,14 @@ export default function AdminEditPage() {
   const saveAll = async (isAdmin: boolean) => {
     const payload = isAdmin ? adminApps : apps;
 
-    const res = await fetch(isAdmin ? "/api/adminapps" : "/api/apps", {
+    const res = await fetch(
+      withBasePath(isAdmin ? "/api/adminapps" : "/api/apps"),
+      {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
-    });
+      },
+    );
 
     if (!res.ok) throw new Error(await res.text());
   };

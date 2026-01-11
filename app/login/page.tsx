@@ -4,11 +4,14 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Button from "../button";
 import { GoogleButton } from "../googlebutton";
 import { signIn } from "next-auth/react";
+import { withBasePath } from "@/lib/basePath";
 
 function LoginContent() {
   const router = useRouter();
   const sp = useSearchParams();
-  const callbackUrl = sp.get("callbackUrl") ?? "/";
+  const rawCallbackUrl = sp.get("callbackUrl");
+  const callbackUrl =
+    !rawCallbackUrl || rawCallbackUrl === "/" ? withBasePath("/") : rawCallbackUrl;
   return (
     <div className="flex flex-box flex-col flex-wrap justify-center items-center min-h-dvh w-full text-black dark:text-white bg-white gap-10 dark:bg-zinc-900 p-4">
       <h1 className="text-3xl font-bold">ログイン(admin)</h1>
@@ -20,7 +23,7 @@ function LoginContent() {
         />
         <Button
           onClick={() => {
-            router.push("/");
+            router.push(withBasePath("/"));
           }}
           title="トップページに戻る"
         />

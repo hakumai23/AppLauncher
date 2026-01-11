@@ -1,5 +1,6 @@
 import type { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import { withBasePath } from "@/lib/basePath";
 
 const adminEmails = new Set<string>(["kamryun@gmail.com"]);
 
@@ -11,7 +12,7 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
   pages: {
-    signIn: "/login",
+    signIn: withBasePath("/login"),
   },
   callbacks: {
     async signIn({ user }) {

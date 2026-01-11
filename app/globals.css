@@ -54,6 +54,6 @@ body {
   }
 
   .anim-transition {
-    @apply transition duration-200 ease-out;
+    transition: all 200ms ease-out;
   }
 }

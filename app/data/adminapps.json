@@ -1,14 +1,14 @@
 [
   {
-    "title": "Hello",
-    "description": "Hello",
-    "url": "https://hakumai23.com",
-    "icon": "/uploads/14c88510-7448-4ef7-8a27-637b7cfd2ab4.png"
+    "title": "RDP",
+    "description": "Display my server via RDP in the browser",
+    "url": "https://rdp.hakumai23.com/rdp/bf685170-2590-4fc8-a775-afd7ae9dcad2/192.168.0.62/3389",
+    "icon": "/uploads/9f73e543-3170-4800-8061-36a101fd9a8c.png"
   },
   {
     "title": "SSH",
-    "description": "Access your server via SSH in the browser",
+    "description": "Access my server via SSH in the browser",
     "url": "https://ssh.hakumai23.com",
-    "icon": "/uploads/d0b13b5d-2b49-4378-8fa3-f490d176b70c.png"
+    "icon": "/uploads/d2da5ee7-6f37-4255-9803-09c3a9803058.png"
   }
 ]

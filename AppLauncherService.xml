@@ -4,7 +4,7 @@
   <description>Next.js AppLauncher service</description>
 
   <executable>cmd</executable>
-  <arguments>/c pnpm start</arguments>
+  <arguments>/c npm run start</arguments>
   <workingdirectory>C:\deploy\AppLauncher</workingdirectory>
 
   <env name="NODE_ENV" value="production" />

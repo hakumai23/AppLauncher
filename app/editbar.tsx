@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import type { ChangeEvent } from "react";
 import Button from "./button";
+import { withBasePath, withBasePathIfLocal } from "@/lib/basePath";
 export type AppItem = {
   url: string;
   title: string;
@@ -33,7 +34,7 @@ export default function EditBar(props: EditBarProps) {
     const fd = new FormData();
     fd.append("file", file);
 
-    const res = await fetch("/api/upload", {
+    const res = await fetch(withBasePath("/api/upload"), {
       method: "POST",
       body: fd,
     });
@@ -83,7 +84,11 @@ export default function EditBar(props: EditBarProps) {
             ref={inputRef}
             onChange={OnChange}
           />
-          <img src={value.icon || "/logo.png"} alt="" className="w-10 h-10" />
+          <img
+            src={withBasePathIfLocal(value.icon || withBasePath("/logo.png"))}
+            alt=""
+            className="w-10 h-10"
+          />
           <Button title="アイコンを選択" onClick={openFileDialog} />
         </div>
         <div>

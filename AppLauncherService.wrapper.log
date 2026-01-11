@@ -234,3 +234,156 @@
 2026-01-10T22:31:35.475 INFO  service - Service started successfully.
 2026-01-10T22:32:30.018 INFO  console - Starting service 'AppLauncher (AppLauncher)'...
 2026-01-10T22:32:30.052 INFO  console - Service 'AppLauncher (AppLauncher)' has already started.
+2026-01-10T23:14:52.773 INFO  service - Stopping AppLauncher
+2026-01-10T23:14:52.775 DEBUG service - ProcessKill 21740
+2026-01-10T23:14:52.804 INFO  service - Child process 'cmd (21740)' canceled with code 1.
+2026-01-10T23:14:52.828 INFO  service - Finished AppLauncher
+2026-01-10T23:14:52.828 INFO  service - Service stopped successfully.
+2026-01-10T23:14:57.789 DEBUG console - Starting WinSW in service mode.
+2026-01-10T23:14:57.843 INFO  service - Starting cmd
+2026-01-10T23:14:57.894 INFO  service - Started process cmd (69380).
+2026-01-10T23:14:57.926 INFO  service - Service started successfully.
+2026-01-10T23:17:49.270 INFO  service - Stopping AppLauncher
+2026-01-10T23:17:49.272 DEBUG service - ProcessKill 69380
+2026-01-10T23:17:49.299 INFO  service - Child process 'cmd (69380)' canceled with code 1.
+2026-01-10T23:17:49.331 INFO  service - Finished AppLauncher
+2026-01-10T23:17:49.332 INFO  service - Service stopped successfully.
+2026-01-10T23:19:12.307 DEBUG console - Starting WinSW in service mode.
+2026-01-10T23:19:12.366 INFO  service - Starting cmd
+2026-01-10T23:19:12.418 INFO  service - Started process cmd (3892).
+2026-01-10T23:19:12.452 INFO  service - Service started successfully.
+2026-01-11T00:15:55.296 INFO  service - Stopping AppLauncher
+2026-01-11T00:15:55.303 DEBUG service - ProcessKill 3892
+2026-01-11T00:15:55.422 INFO  service - Child process 'cmd (3892)' canceled with code 1.
+2026-01-11T00:15:55.442 INFO  service - Finished AppLauncher
+2026-01-11T00:15:55.443 INFO  service - Service was shut down successfully.
+2026-01-11T00:16:54.902 DEBUG console - Starting WinSW in service mode.
+2026-01-11T00:16:54.972 INFO  service - Starting cmd
+2026-01-11T00:16:55.031 INFO  service - Started process cmd (12404).
+2026-01-11T00:16:55.071 INFO  service - Service started successfully.
+2026-01-11T00:33:21.958 INFO  service - Stopping AppLauncher
+2026-01-11T00:33:21.960 DEBUG service - ProcessKill 12404
+2026-01-11T00:33:21.978 INFO  service - Child process 'cmd (12404)' canceled with code 1.
+2026-01-11T00:33:21.999 INFO  service - Finished AppLauncher
+2026-01-11T00:33:21.999 INFO  service - Service stopped successfully.
+2026-01-11T00:36:45.263 DEBUG console - Starting WinSW in service mode.
+2026-01-11T00:36:45.317 INFO  service - Starting cmd
+2026-01-11T00:36:45.371 INFO  service - Started process cmd (2932).
+2026-01-11T00:36:45.400 INFO  service - Service started successfully.
+2026-01-11T00:37:35.457 INFO  service - Stopping AppLauncher
+2026-01-11T00:37:35.460 DEBUG service - ProcessKill 2932
+2026-01-11T00:37:35.475 INFO  service - Child process 'cmd (2932)' canceled with code 1.
+2026-01-11T00:37:35.493 INFO  service - Finished AppLauncher
+2026-01-11T00:37:35.494 INFO  service - Service stopped successfully.
+2026-01-11T00:55:17.873 DEBUG console - Starting WinSW in service mode.
+2026-01-11T00:55:17.930 INFO  service - Starting cmd
+2026-01-11T00:55:17.981 INFO  service - Started process cmd (22432).
+2026-01-11T00:55:18.013 INFO  service - Service started successfully.
+2026-01-11T00:55:48.821 INFO  service - Stopping AppLauncher
+2026-01-11T00:55:48.823 DEBUG service - ProcessKill 22432
+2026-01-11T00:55:48.837 INFO  service - Child process 'cmd (22432)' canceled with code 1.
+2026-01-11T00:55:48.853 INFO  service - Finished AppLauncher
+2026-01-11T00:55:48.854 INFO  service - Service stopped successfully.
+2026-01-11T01:08:31.323 DEBUG console - Starting WinSW in service mode.
+2026-01-11T01:08:31.385 INFO  service - Starting cmd
+2026-01-11T01:08:31.436 INFO  service - Started process cmd (23752).
+2026-01-11T01:08:31.469 INFO  service - Service started successfully.
+2026-01-11T01:09:00.606 INFO  service - Stopping AppLauncher
+2026-01-11T01:09:00.608 DEBUG service - ProcessKill 23752
+2026-01-11T01:09:00.622 INFO  service - Child process 'cmd (23752)' canceled with code 1.
+2026-01-11T01:09:00.638 INFO  service - Finished AppLauncher
+2026-01-11T01:09:00.639 INFO  service - Service stopped successfully.
+2026-01-11T01:31:10.715 DEBUG console - Starting WinSW in service mode.
+2026-01-11T01:31:10.768 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T01:31:10.788 INFO  service - Starting cmd
+2026-01-11T01:31:10.838 INFO  service - Started process cmd (38716).
+2026-01-11T01:31:10.870 INFO  service - Service started successfully.
+2026-01-11T01:32:26.169 INFO  service - Stopping AppLauncher
+2026-01-11T01:32:26.172 DEBUG service - ProcessKill 38716
+2026-01-11T01:32:41.179 INFO  service - Child process 'cmd (38716)' terminated.
+2026-01-11T01:32:41.196 INFO  service - Finished AppLauncher
+2026-01-11T01:32:41.196 INFO  service - Service stopped successfully.
+2026-01-11T19:15:53.352 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:15:53.402 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:15:53.421 INFO  service - Starting cmd
+2026-01-11T19:15:53.471 INFO  service - Started process cmd (30004).
+2026-01-11T19:15:53.504 INFO  service - Service started successfully.
+2026-01-11T19:15:54.412 WARN  service - Child process 'cmd (30004)' finished with code 1.
+2026-01-11T19:15:59.958 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:16:00.013 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:16:00.033 INFO  service - Starting cmd
+2026-01-11T19:16:00.088 INFO  service - Started process cmd (14168).
+2026-01-11T19:16:00.126 INFO  service - Service started successfully.
+2026-01-11T19:16:00.951 WARN  service - Child process 'cmd (14168)' finished with code 1.
+2026-01-11T19:16:16.457 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:16:16.512 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:16:16.532 INFO  service - Starting cmd
+2026-01-11T19:16:16.584 INFO  service - Started process cmd (36424).
+2026-01-11T19:16:16.616 INFO  service - Service started successfully.
+2026-01-11T19:16:17.416 WARN  service - Child process 'cmd (36424)' finished with code 1.
+2026-01-11T19:16:47.949 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:16:48.005 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:16:48.032 INFO  service - Starting cmd
+2026-01-11T19:16:48.093 INFO  service - Started process cmd (40892).
+2026-01-11T19:16:48.134 INFO  service - Service started successfully.
+2026-01-11T19:16:49.092 WARN  service - Child process 'cmd (40892)' finished with code 1.
+2026-01-11T19:17:19.668 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:17:19.720 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:17:19.741 INFO  service - Starting cmd
+2026-01-11T19:17:19.790 INFO  service - Started process cmd (29424).
+2026-01-11T19:17:19.824 INFO  service - Service started successfully.
+2026-01-11T19:17:20.627 WARN  service - Child process 'cmd (29424)' finished with code 1.
+2026-01-11T19:17:51.184 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:17:51.251 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:17:51.285 INFO  service - Starting cmd
+2026-01-11T19:17:51.353 INFO  service - Started process cmd (41120).
+2026-01-11T19:17:51.401 INFO  service - Service started successfully.
+2026-01-11T19:17:52.432 WARN  service - Child process 'cmd (41120)' finished with code 1.
+2026-01-11T19:18:22.946 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:18:22.996 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:18:23.016 INFO  service - Starting cmd
+2026-01-11T19:18:23.064 INFO  service - Started process cmd (30184).
+2026-01-11T19:18:23.099 INFO  service - Service started successfully.
+2026-01-11T19:18:23.901 WARN  service - Child process 'cmd (30184)' finished with code 1.
+2026-01-11T19:18:54.411 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:18:54.460 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:18:54.479 INFO  service - Starting cmd
+2026-01-11T19:18:54.526 INFO  service - Started process cmd (38200).
+2026-01-11T19:18:54.560 INFO  service - Service started successfully.
+2026-01-11T19:18:55.356 WARN  service - Child process 'cmd (38200)' finished with code 1.
+2026-01-11T19:19:25.856 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:19:25.906 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:19:25.925 INFO  service - Starting cmd
+2026-01-11T19:19:25.974 INFO  service - Started process cmd (4912).
+2026-01-11T19:19:26.008 INFO  service - Service started successfully.
+2026-01-11T19:19:26.818 WARN  service - Child process 'cmd (4912)' finished with code 1.
+2026-01-11T19:19:57.318 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:19:57.366 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:19:57.385 INFO  service - Starting cmd
+2026-01-11T19:19:57.433 INFO  service - Started process cmd (41756).
+2026-01-11T19:19:57.466 INFO  service - Service started successfully.
+2026-01-11T19:19:58.302 WARN  service - Child process 'cmd (41756)' finished with code 1.
+2026-01-11T19:20:28.812 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:20:28.861 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:20:28.880 INFO  service - Starting cmd
+2026-01-11T19:20:28.928 INFO  service - Started process cmd (35552).
+2026-01-11T19:20:28.961 INFO  service - Service started successfully.
+2026-01-11T19:20:29.727 WARN  service - Child process 'cmd (35552)' finished with code 1.
+2026-01-11T19:21:00.271 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:21:00.328 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:21:00.350 INFO  service - Starting cmd
+2026-01-11T19:21:00.410 INFO  service - Started process cmd (13656).
+2026-01-11T19:21:00.444 INFO  service - Service started successfully.
+2026-01-11T19:21:01.265 WARN  service - Child process 'cmd (13656)' finished with code 1.
+2026-01-11T19:21:31.776 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:21:31.826 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:21:31.845 INFO  service - Starting cmd
+2026-01-11T19:21:31.893 INFO  service - Started process cmd (28440).
+2026-01-11T19:21:31.924 INFO  service - Service started successfully.
+2026-01-11T19:21:32.715 WARN  service - Child process 'cmd (28440)' finished with code 1.
+2026-01-11T19:22:03.217 DEBUG console - Starting WinSW in service mode.
+2026-01-11T19:22:03.268 INFO  console - Service 'AppLauncher (AppLauncher)' was refreshed successfully.
+2026-01-11T19:22:03.287 INFO  service - Starting cmd
+2026-01-11T19:22:03.335 INFO  service - Started process cmd (19172).
+2026-01-11T19:22:03.368 INFO  service - Service started successfully.
+2026-01-11T19:22:04.271 WARN  service - Child process 'cmd (19172)' finished with code 1.
