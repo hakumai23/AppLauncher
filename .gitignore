@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+AppLauncherService.err.log.old
+AppLauncherService.err.log
+AppLauncherService.out.log
+AppLauncherService.out.log.old
+AppLauncherService.wrapper.log
+app/data
