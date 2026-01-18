@@ -3,7 +3,7 @@ import Link from "next/link";
 import { authOptions } from "../auth";
 import { SignOutButton } from "./signout-button";
 import { withBasePath } from "@/lib/basePath";
-
+import { ThemeToggle } from "./theme-toggle";
 export default async function Header() {
   const session = await getServerSession(authOptions);
   const isLoggedIn = !!session;
@@ -18,7 +18,8 @@ export default async function Header() {
         />
         <h1 className="text-lg font-semibold">App Launcher</h1>
       </div>
-      <div>
+      <div className="flex items-center gap-3">
+        <ThemeToggle></ThemeToggle>
         {isLoggedIn ? (
           <div className="flex items-center gap-3">
             <span className="text-sm text-zinc-600 dark:text-zinc-300">

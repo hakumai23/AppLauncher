@@ -7,7 +7,6 @@ export default async function Sidebar() {
   const isAdmin = !!session;
   return (
     <aside className="w-60 shrink-0 border-r border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 anim-transition px-4 pt-4">
-      <div className="font-medium">Sidebar</div>
       <PagesButton href="/"></PagesButton>
       {isAdmin && (
         <>
@@ -15,7 +14,6 @@ export default async function Sidebar() {
           <PagesButton href="/admin/edit" title="アプリ一覧編集"></PagesButton>
         </>
       )}
-      <ThemeToggle></ThemeToggle>
     </aside>
   );
 }

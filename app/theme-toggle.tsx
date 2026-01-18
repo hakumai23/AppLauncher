@@ -1,6 +1,8 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { Moon, Sun } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
 
 type Theme = "light" | "dark";
 
@@ -32,20 +34,19 @@ function applyTheme(theme: Theme) {
 export function ThemeToggle() {
   const theme = useSyncExternalStore(subscribe, getCurrentTheme, () => "light");
 
-  const nextTheme: Theme = theme === "dark" ? "light" : "dark";
+  const isDark = theme === "dark";
 
   return (
-    <button
-      type="button"
-      className="rounded-xl border-2 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-      onClick={() => {
-        applyTheme(nextTheme);
-      }}
-      aria-label={
-        theme === "dark" ? "ライトモードに切り替え" : "ダークモードに切り替え"
-      }
-    >
-      {theme === "dark" ? "Light" : "Dark"}
-    </button>
+    <div className="flex items-center gap-2 mr-4">
+      <Sun className="h-4 w-4" />
+      <Switch
+        checked={isDark}
+        onCheckedChange={() => {
+          applyTheme(isDark ? "light" : "dark");
+        }}
+        aria-label={isDark ? "ライトモードに切り替え" : "ダークモードに切り替え"}
+      />
+      <Moon className="h-4 w-4" />
+    </div>
   );
 }
