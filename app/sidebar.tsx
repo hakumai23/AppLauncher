@@ -6,7 +6,7 @@ export default async function Sidebar() {
   const session = await getServerSession(authOptions);
   const isAdmin = !!session;
   return (
-    <aside className="w-60 shrink-0 border-r border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 anim-transition px-4 pt-4">
+    <aside className="w-60 shrink-0 border-r border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 anim-transition px-4 pt-2">
       <PagesButton href="/"></PagesButton>
       {isAdmin && (
         <>
