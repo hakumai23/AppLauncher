@@ -2,7 +2,7 @@ import { withAuth } from "next-auth/middleware";
 import { withBasePath } from "@/lib/basePath";
 
 export default withAuth(
-  function middleware() {
+  function proxy() {
   },
   {
     pages: {
