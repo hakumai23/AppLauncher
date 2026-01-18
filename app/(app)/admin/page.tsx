@@ -13,7 +13,7 @@ export default function AdminPage() {
   const router = useRouter();
   const [adminapps, setadminApps] = useState<AppItem[]>([]);
   useEffect(() => {
-    fetch("/apps/api/adminapps")
+    fetch("/launcher/api/adminapps")
       .then((res) => res.json())
       .then((data) => setadminApps(data))
       .catch((err) => console.error(err));

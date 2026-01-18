@@ -18,7 +18,7 @@ export const config = {
   matcher: [
     "/admin/:path*",
     "/data/adminapps.json",
-    "/apps/admin/:path*",
-    "/apps/data/adminapps.json",
+    "/launcher/admin/:path*",
+    "/launcher/data/adminapps.json",
   ],
 };

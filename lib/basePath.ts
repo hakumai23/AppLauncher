@@ -1,11 +1,12 @@
-const normalizeBasePath = (value: string) => {
-  const trimmed = value.trim();
-  if (!trimmed) return "";
-  const withLeadingSlash = trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
-  return withLeadingSlash.replace(/\/+$/, "");
-};
+// const normalizeBasePath = (value: string) => {
+//   const trimmed = value.trim();
+//   if (!trimmed) return "";
+//   const withLeadingSlash = trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
+//   return withLeadingSlash.replace(/\/+$/, "");
+// };
 
-export const basePath = normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH ?? "");
+// export const basePath = normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH ?? "");
+export const basePath = "/launcher";
 
 export const withBasePath = (path: string) => {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;

@@ -13,7 +13,7 @@ export default function Page() {
   const router = useRouter();
   const [apps, setApps] = useState<AppItem[]>([]);
   useEffect(() => {
-    fetch("/apps/api/apps")
+    fetch("/launcher/api/apps")
       .then((res) => res.json())
       .then((data) => setApps(data))
       .catch((err) => console.error(err));
