@@ -1,10 +1,23 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useState,useEffect } from "react";
 import Card from "@/app/card";
-import adminapps from "@/app/data/adminapps.json";
+type AppItem = {
+  url: string;
+  title: string;
+  icon?: string;
+  description: string;
+};
 export default function AdminPage() {
   const router = useRouter();
+  const [adminapps, setadminApps] = useState<AppItem[]>([]);
+  useEffect(() => {
+    fetch("/apps/api/adminapps")
+      .then((res) => res.json())
+      .then((data) => setadminApps(data))
+      .catch((err) => console.error(err));
+  }, []);
   return (
     <div className="p-4 flex flex-wrap flex-col gap-3">
       <h1 className="font-semibold text-3xl text-black dark:text-white mb-4">

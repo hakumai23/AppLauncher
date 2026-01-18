@@ -3,6 +3,7 @@ import EditBar from "@/app/editbar";
 import React, { useEffect, useState } from "react";
 import Button from "@/app/button";
 import { withBasePath } from "@/lib/basePath";
+import { toast } from "sonner"
 type AppItem = {
   url: string;
   title: string;
@@ -60,8 +61,13 @@ export default function AdminEditPage() {
       body: JSON.stringify(payload),
       },
     );
-
-    if (!res.ok) throw new Error(await res.text());
+    if(res.ok){
+      toast.success("保存しました");
+    }
+    if (!res.ok) {
+      toast.error("保存に失敗しました");
+      throw new Error(await res.text());
+    }
   };
   return (
     <div className="flex flex-col gap-3">
@@ -70,14 +76,14 @@ export default function AdminEditPage() {
           編集画面
         </span>
         <div className="flex flex-row">
+          <Button onClick={() => addOne(false)} title="追加" />
+          <div className="w-2"></div>
           <Button
             onClick={() => {
               saveAll(false);
             }}
             title="保存"
           />
-          <div className="w-2"></div>
-          <Button onClick={() => addOne(false)} title="追加" />
         </div>
       </div>
       <div className="flex flex-col">
