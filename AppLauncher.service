@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/opt/AppLauncher
-ExecStart=/usr/bin/npm run start
+ExecStart=/home/hakumai23/.nvm/versions/node/v25.9.0/bin/npm run start
 Environment=NODE_ENV=production
 Environment=PORT=3000
 Restart=on-failure
