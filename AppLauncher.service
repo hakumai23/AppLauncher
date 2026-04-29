@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/deploy/AppLauncher
-ExecStart=/usr/bin/env npm run start
+WorkingDirectory=/opt/AppLauncher
+ExecStart=/usr/bin/npm run start
 Environment=NODE_ENV=production
 Environment=PORT=3000
 Restart=on-failure
